@@ -65,7 +65,7 @@ To predict credit risk, I would recommend using the AdaBoost model. This model h
 
 This results in a good balance between the liability of lending to clients that will end up defaulting, and the lost profit from refusing loans to clients who would have paid the loan back.
 
-It should be noted, however, that about 90% of the loans this model labels as high risk were actually low risk loans (low precision). This is substantially better than the other models, but still quite low. Many loans to qualified clients will be denied. 
+It should be noted, however, that about 90% of the loans this model labeled as high risk were actually low risk loans (low precision). This is substantially better than the other models, but still quite low. Many loans to qualified clients will be denied. 
 
 
 
