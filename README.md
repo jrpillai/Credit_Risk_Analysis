@@ -53,4 +53,22 @@ In this analysis, use a credit card dataset from Lending Club, a peer-to-peer le
     
     ![AdaBoost](Images/adaboost.png)
 
+## Summary
+
+See a summary of the discussed metrics below:
+
+![Summary](Images/Summary.png)
+
+The various over and undersampling methods moderately improved the relevant recall scores, reducing the bias of of the imbalanced dataset. Each had trade-offs, some increasing recall more for high-risk, and some for low-risk. The two ensemble learning methods were particularly successful, with AdaBoost increasing recall for both labels above 90%.
+
+To predict credit risk, I would recommend using the AdaBoost model. This model has high recall for high risk loans, correctly identifying about 92% of the true high risk loans. It is able to successfully identify high risk loans without mislabeling them as low risk. This is the most important metric for this application, where the company wants to reduce the number of high risk loans it approves. It has similarly high recall for low-risk loans at 94%, meaning relatively few true low-risk loans are mislabeled. 
+
+This results in a good balance between the liability of lending to clients that will end up defaulting, and the lost profit from refusing loans to clients who would have paid the loan back.
+
+It should be noted, however, that about 90% of the loans this model labels as high risk were actually low risk loans (low precision). This is substantially better than the other models, but still quite low. Many loans to qualified clients will be denied. 
+
+
+
+
+
 
